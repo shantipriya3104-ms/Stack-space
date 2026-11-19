@@ -1159,7 +1159,7 @@ body::before {
       rgba(3, 8, 23, 0.30),
       rgba(3, 8, 23, 0.30)
     ),
-    url("Neon Wave Particle Dreamscape.png");
+   url("/Neon%20Wave%20Particle%20Dreamscape.png");
 
   background-size: cover;
   background-position: center;

@@ -30,9 +30,19 @@ const checks = [
   ['has_scaling_plan', 'Scaling plan', 'Plan how the app handles growing demand'],
 ] as const
 
-const initial = Object.fromEntries(checks.map(([key]) => [key, false])) as Record<string, boolean>
+type ReadinessKey = typeof checks[number][0]
 
-const emptyForm = () => ({
+type AssessmentForm = {
+  project_name: string
+  project_type: string
+  stack: string
+} & Record<ReadinessKey, boolean>
+
+const initial = Object.fromEntries(
+  checks.map(([key]) => [key, false])
+) as Record<ReadinessKey, boolean>
+
+const emptyForm = (): AssessmentForm => ({
   project_name: '',
   project_type: 'Web application',
   stack: '',
