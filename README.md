@@ -10,8 +10,6 @@ It is designed as a practical portfolio project demonstrating:
 - Docker containerization
 - Automated tests and GitHub Actions CI
 
-> ** The readiness score is a heuristic, not a security audit or certification. Do not paste secrets,
-> credentials, private source code, or sensitive customer data.
 
 ## Features
 
